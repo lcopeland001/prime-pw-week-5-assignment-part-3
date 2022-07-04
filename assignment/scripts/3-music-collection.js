@@ -13,6 +13,11 @@ function addToCollection ( title, artist, yearPublished) {
     return newReccord;
 }
 
-addToCollection ('My Girl', 'Michael Jackson', 1986);
+addToCollection ('My Girl', 'MJ', 1986);
+addToCollection ('Sage', 'Fargo', 1979);
+addToCollection ('Dakoda', 'Jim', 1986);
+addToCollection ('She is', 'Jim', 1986);
+addToCollection ('Grapes', 'Shear', 1954);
+addToCollection ('French', 'Kobe', 1986);
 
-// console.log(collection);
+console.log(collection);
