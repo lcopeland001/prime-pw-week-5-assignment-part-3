@@ -3,7 +3,7 @@ console.log('***** Music Collection *****')
 let collection = [];
 
 function addToCollection ( title, artist, yearPublished) {
-    //console.log('Add this to collection:', addToCollection);
+    //console.log('Add this to collection:', addToCollection(title, artist, yearPublished));
     const newReccord = {
         title: title,
         artist: artist,
@@ -21,3 +21,12 @@ addToCollection ('Grapes', 'Shear', 1954);
 addToCollection ('French', 'Kobe', 1986);
 
 console.log(collection);
+
+function showCollection(array){
+    console.log(array.length);
+    for (let record of array) {
+        console.log(record.title, 'by', record.artist, ', published in', record.yearPublished);
+    }
+}
+
+console.log(showCollection(collection));
