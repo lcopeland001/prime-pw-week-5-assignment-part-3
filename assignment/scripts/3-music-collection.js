@@ -29,4 +29,17 @@ function showCollection(array){
     }
 }
 
-console.log(showCollection(collection));
+showCollection(collection);
+
+function findByArtist(artist){
+    console.log('in findByArtist:', artist);
+    let recordByArtist=[ ];
+    for (record of collection) {
+        if (record.artist === artist){
+            recordByArtist.push(record);
+        }
+    }
+    return recordByArtist;
+}
+
+console.log(findByArtist('MJ'));
